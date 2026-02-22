@@ -2,10 +2,131 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>OmHackz — Portfolio</title>
-<link rel="icon" type="image/png" herf="./images/favicon.jpg">
-<link rel="stylesheet" href="./css/styles.css">
+<title>OmLabs CDN — Fast & Reliable Asset Delivery</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./icon.png">
+
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+<style>
+body {
+  background: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 880px;
+  margin: 30px auto;
+  background: #ffffff;
+  border: 2px solid #000;
+  padding: 25px;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+}
+
+.site-header img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Navigation */
+.site-nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.site-nav a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+}
+
+/* Square About Box */
+.about-box {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-box img {
+  width: 120px;
+  margin: 0 auto 15px auto;
+  border: 1px solid #000;
+  padding: 5px;
+  background: #fff;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 2px solid #000;
+  font-size: 14px;
+}
+</style>
 
 </head>
 <body>
@@ -14,94 +135,91 @@
 
   <!-- Header -->
   <header class="site-header">
-    <h1>OmHackz Portfolio</h1>
+    <h1>
+      <img src="./icon.png" width="40">
+      OmLabs CDN
+    </h1>
+    <p>Fast • Secure • Developer Friendly</p>
   </header>
 
   <!-- Navigation -->
   <nav class="site-nav">
     <a href="./">Home</a> |
-    <a href="./blog">Blog</a> |
-    <a href="./downloads">Downloads</a> |
-    <a href="./links">Links</a>
+    <a href="./docs">Documentation</a> |
+    <a href="./status">Status</a> |
+    <a href="./contact">Contact</a>
   </nav>
 
   <!-- About Section -->
   <section class="section">
-    <h2>About Me</h2>
+    <h2>About OmLabs CDN</h2>
 
-    <table width="100%">
-      <tr>
-        <td width="220" valign="top">
-          <img src="./images/me.jpg"
-               width="200"
-               style="border:1px solid #000; padding:3px; background:#fff;">
-        </td>
+    <div class="about-box">
+      <img src="./icon.png" alt="OmLabs Icon">
 
-        <td valign="top">
-          <p>
-            Hello! I'm <strong>Om Sarkar</strong>, a developer and creator from Goas, Nadia.
-          </p>
+      <p>
+        <strong>OmLabs CDN</strong> is a lightweight content delivery network
+        built and maintained by <strong>OmHackz</strong>.
+      </p>
 
-          <p>
-            I build websites, apps, and games that blend creativity with functionality.
-            Operating as <strong>OmHackz</strong> and <strong>Om Games</strong>.
-          </p>
+      <p>
+        Built for developers who need fast,
+        secure, and reliable asset hosting.
+      </p>
 
-          <p>
-            <strong>Tech Stack:</strong><br>
-            HTML · CSS · JavaScript · PHP · React · Roblox Lua
-          </p>
-
-          <p>
-            <a href="./downloads" class="btn">Downloads</a>
-            <a href="./blog" class="btn">Read the Blog</a>
-          </p>
-        </td>
-      </tr>
-    </table>
+      <div>
+        <a href="./docs" class="btn">Documentation</a>
+        <a href="./status" class="btn">System Status</a>
+      </div>
+    </div>
 
   </section>
 
-  <!-- Featured Work -->
+  <!-- Services -->
   <section class="section">
-    <h2>Featured Work</h2>
+    <h2>Services</h2>
 
     <table>
       <tr>
-        <th>Project</th>
+        <th>Service</th>
         <th>Description</th>
       </tr>
 
       <tr>
-        <td>Interactive Websites</td>
-        <td>Responsive and accessible websites.</td>
+        <td>Static File Hosting</td>
+        <td>Fast delivery of images, scripts, stylesheets, and media.</td>
       </tr>
 
       <tr>
-        <td>Custom Tools</td>
-        <td>Utility apps and helpful scripts.</td>
+        <td>Secure HTTPS CDN</td>
+        <td>Encrypted and optimized content distribution.</td>
       </tr>
 
       <tr>
-        <td>React Apps</td>
-        <td>Component-based modern applications.</td>
+        <td>Versioned Libraries</td>
+        <td>Reliable access to specific file versions.</td>
       </tr>
 
       <tr>
-        <td>Roblox Experiences</td>
-        <td>Games built using Roblox Lua.</td>
+        <td>Developer Tools</td>
+        <td>Utilities for deployment and asset management.</td>
       </tr>
     </table>
 
   </section>
 
-  <!-- Contact CTA -->
+  <!-- Owner -->
+  <section class="section">
+    <h2>Owner</h2>
+    <p>
+      OmLabs CDN is owned and operated by <strong>OmHackz</strong>.
+      Focused on building scalable and modern web infrastructure.
+    </p>
+  </section>
+
+  <!-- Contact -->
   <section class="section">
     <h2>Contact</h2>
-
-    <p>
-      Interested in collaboration or freelance work?
-    </p>
 
     <p>
       <i class="fa-solid fa-envelope"></i>
@@ -111,11 +229,10 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    © 2026 OmHackz — Portfolio
+    © 2026 OmLabs CDN — Owned by OmHackz
   </footer>
 
 </div>
 
 </body>
 </html>
-
